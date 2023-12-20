@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <script src="https://kit.fontawesome.com/4a7c5b62b3.js"
+            crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <style>
+        body{
+            width: 1366px;
+            height: 3000px;
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        .first{
+            margin-top: 0;
+            margin-left: 0;
+            width: 1520px;
+            height: 768px;
+            font-size: large;
+            background-image: url(../photo/1222659.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .logo{
+            color: white;
+            margin-left: 20px;
+            font-size: 35px;
+            cursor: pointer;
+            transition: color 0.6s;
+
+        }
+        span{
+            
+            color: #f9004d;
+            transition: color 0.7s;
+
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 45px;
+            padding-right: 8%;
+            letter-spacing: 3px;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 25px;
+        }
+        nav ul li a{
+            color: whitesmoke;
+            text-decoration: none;
+            transition: color 0.7s;
+        }
+        .button{
+             color: rgb(231, 7, 85);
+            text-decoration: none;
+            border: 2px solid transparent;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background-color 0.4s ;
+            transition:color 1s ;
+
+        }
+        .button:hover{
+            color:brown;
+            background-color: whitesmoke;
+            transition-delay: 0.2s;
+        }
+
+        .logo:hover{
+            background: linear-gradient(40deg, #f9004d 60%, rgb(236, 172, 52));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        span:hover{
+            color: whitesmoke;
+        }
+        nav ul li a:hover{
+            background: linear-gradient(40deg, #f9004d 60%, rgb(236, 172, 52));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;        }
+        .content{
+            color: white;
+            margin-left: 200px;
+            margin-top: 100px;
+            font-size: 2rem;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .topline{
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        .Multi{
+            font-family: 'Poppins', sans-serif;
+            z-index: 5;
+            cursor:pointer;
+            background: linear-gradient(40deg, #f9004d 60%, rgb(236, 172, 52));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+        .email{
+            position: absolute;
+            top:70%;
+            margin-left: 188px;
+            transform: translateY(-50%);
+        }
+        .email form{
+            width: 300px;
+            max-width: 100%;
+            position: relative;
+        }
+        .email form input:first-child{
+            display: inline-block;
+            width: 100%;
+            padding: 14px 20px 14px 15px;
+            border: 2px solid #f9004d;
+            outline: none;
+            border-radius: 30px;
+        }
+        .email form input:last-child{
+            position: absolute;
+            display: inline-block;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            padding: 10px 30px;
+            background: linear-gradient(40deg, #f9004d 60%, rgb(236, 172, 52));
+            color: whitesmoke;
+            box-shadow: 0px 0px 5px #000,0px 0px 15px #858585 ;
+            top:6px;
+            right: -30px;
+            
+        }
+        .hehe{
+            color: whitesmoke;
+            transition: color 0.7s;
+        }
+        .hehe:hover{
+            color: #f9004d;
+        }
+        .Preenon{
+            position: absolute;
+            display: inline-block;
+            top: 44%;
+        }
+        
+        .main{
+            width: 1520px;
+            padding: 100px 0px;
+            background-color: rgba(14, 13, 13, 0.747);
+            margin-top: 80px;
+        }
+        .about{
+          
+            width: 1130px;
+            max-width: 93%;
+            margin:0 auto ;
+            align-items: center;
+            display: flex;
+            justify-content:space-around;
+
+        }
+        
+        .about1{
+            margin-left: 100px;
+            width: 550px;
+        }
+        .main img{
+            width: 400px;
+            height: auto;
+            
+        }
+       .about1 h2{
+        color: aliceblue;
+        font-size: 60px;
+        text-transform:capitalize;
+        margin-bottom: 25px;
+        font-family: 'Poppins', sans-serif;
+        transition: background-image 1s;
+        
+       }
+       .about1 h4{
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(40deg, #f9004d, rgb(236, 172, 52) 70%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+       }
+       .Me{
+        background: linear-gradient(40deg, #f9004d, rgb(236, 172, 52) 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-image 1s;
+
+       }
+
+       .about1 h2:hover{
+        background: linear-gradient(40deg, #f9004d, rgb(236, 172, 52) 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+       }
+       .Me:hover{
+        background-image: linear-gradient(to top, white 0%, white 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: background-image 0.7s;
+
+       }
+       .about1 p{
+        color: whitesmoke;
+        letter-spacing: 2px;
+        line-height: 40px;
+        font-size: 18px;
+        margin-bottom: 45px;
+        font-family: 'Poppins', sans-serif;
+       }
+       button{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: 3px;
+        padding: 10px 30px;
+        border-radius: 25px;
+        transition: 0.6s;
+       }
+       
+       button:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+       }
+       .dot::before{
+        position:absolute;
+        content: '';
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        left:900px;
+        top:1100px;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        z-index: -2;
+        animation: obejct1 6s linear infinite;
+      }
+
+      .Preenon{
+        position: relative;
+
+      }
+      .mh-skills{
+        width: 1520px;
+        height: 500px;
+        background-color: #0c0c0c;
+      }
+      .mh-skills .mh-professional-skill {
+        padding: 60px;
+        color: white;
+      }
+      .mh-skills .mh-professional-skill h3{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 60px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;   
+      }
+      
+      .mh-professional-skills{
+        padding-left: 20%;
+        color: white;
+      }
+      .mh-professional-skills h3{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 60px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        position: absolute;
+        top: 1770px;
+        left: 1050px;
+
+       
+      }
+      
+      .mh-professional-progress{
+        position:absolute;
+        top: 1880px;
+        left: -2px;
+        margin-left: 1000px;
+      }
+      .mh-professional-progress li{
+        display: inline-block;
+        margin: 0 auto;
+        float: none;
+        width: 48%;
+        margin-bottom: 30px;
+      }
+      .Quality{
+        font-size: 45px;
+        text-align: center;
+        position: absolute;
+        left: 650px;
+        top:1700px;
+        font-family: 'Poppins', sans-serif;
+        transition:  0.7s;
+      }
+      .fic{
+        color: #f9004d;
+      }
+      .Quality:hover{
+        color: #f9004d;
+      }
+    
+      .mh-progress{
+        margin-bottom: 10px;
+        font:900 1.14285/1;
+        color: white;
+      }
+      .mh-progress .progressbar-text{
+        color:inherit !important ;
+        font-family: 'Poppins', sans-serif;
+      }
+      .progress.progress-line{
+        height: 10px;
+        margin-right: 60px;
+      }
+      .progress.progress-line .progress-text{
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        width: 300px;
+        transform: translateY(-35%);
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+
+      }
+      .mh-progress.mh-progress-circle{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+
+      .mh-progress path:nth-child(1){
+        stroke: rgba(0,0,0,0.7);
+      }
+      .mh-progress path:nth-child(2){
+        stroke: #f9004d !important;
+      }
+      .candidates{
+        position: relative;
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+      }
+      .candidates .practical{
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+      }
+      .candidates .practical .info{
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+    }
+      .candidates .practical .info .name{
+        position:absolute;
+        top:0;
+        left: 0;
+        font-size: 15px;
+        font-weight: 600;
+        opacity: 0.9;
+        font-family: 'Poppins', sans-serif;
+
+      }
+      .candidates .practical .info .percentage-num{
+        position:absolute;
+        top:0;
+        left:50%;
+        font-size: 15px;
+        font-weight: normal;
+      }
+      .candidates .practical .progressBar{
+        position:relative;
+        width: 50%;
+        height: 7px;
+        margin: 30px 0 2px;
+        border-radius: 10px;
+        background: rgba(0,0,0,0.5);
+      }
+      .candidates .practical .percentagem{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 7px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: #f9004d;
+        -webkit-transition:3s all;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-name:animationProgress;
+        font-family: 'Poppins', sans-serif;
+
+      }
+      
+      @keyframes  animationProgress{
+        from{
+            width: 0;
+        }
+      }
+      .but-ton{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transform: 0.4s;
+      }
+      .but-ton:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+      }
+      .service{
+        background: #0b0b0be5;
+        width: 1520px;
+        padding: 100px 0px;
+      }
+      .title h2{
+        color: white;
+        font-size: 50px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+
+      }
+      .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+      }
+      .card{
+        height: 365px;
+        width: 335px;
+        padding:20px 35px;
+        background: #110a0ddb;
+        border-radius: 20px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+      .card i{
+        font-size: 50px;
+        display: block;
+        text-align: center;
+        margin: 25px 0px;
+        background: linear-gradient(40deg, #f9004d 40%, rgb(236, 172, 52) 85%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      h5{
+        color: white;
+        font-size:23px;
+        margin-bottom: 15px;
+        font-family: 'Poppins', sans-serif;
+      }
+      .pra p{
+        color: aliceblue;
+        font-size:16px;
+        line-height: 27px;
+        margin-bottom: 25px;
+      }
+      .card .but-ton{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transform: 4s;
+      }
+      .card .but-ton:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+      }
+      .contact-me{
+        width: 1520px;
+        height: 100px;
+        background-color:#0b0b0be5;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        padding-bottom: 100px;
+
+      }
+      .contact-me p{
+        background: linear-gradient(40deg, #f9004d 40%, rgb(236, 172, 52) 85%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+      .contact-me .button-two{
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 9px 22px;
+        border-radius: 30px;
+        transform: 4s;
+      }
+      .contact-me .button-two:hover{
+        background-color: transparent;
+        border: 2px solid #f9004d;
+        cursor: pointer;
+      }
+      footer{
+        position: relative;
+        width:1520px;
+        height: 400px;
+        background-color: #101010;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      footer p:nth-child(1){
+        font-size: 30px;
+        color: aliceblue;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      footer p:nth-child(2){
+        color: aliceblue;
+        font-size: 17px;
+        width: 500px;
+        text-align: center;
+        line-height: 26px;
+      }
+      .social{
+        display: flex;
+      }
+      .social a{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(40deg, #f9004d 40%, rgb(236, 172, 52) 85%);
+        border-radius: 50%;
+        margin: 22px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+      }
+      .social a:hover{
+        transform: scale(1.3);
+        transition: 0.3s;
+      }
+      .end{
+        position: absolute;
+        color: #f9004d;
+        bottom: 35px;
+        font-size: 14px;
+      }
+
+
+    
+    
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        <nav>
+            <h2 class="logo">Folio <span>.port</span></h2>
+            <ul>
+              <li>  <a href="#Home">Home</a></li>
+              <li>  <a href="#mh-skills">Qualification</a></li>
+              <li>  <a href="#service">services</a></li>
+              <li>  <a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="./form.html" class="button">Subscribe</a>
+        </nav>
+        <div class="content">
+            <span class="topline">Hello, <span class="hehe">My name is</span></span>
+            <br>
+            <span class="Preenon">Preenon Saha</span>
+            <h1 class="mutlax">I'm a <span class="Multi"><b></b></span></h1>
+            
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typingEffect = new Typed(".Multi",{
+                strings : ["Coder", "Singer", "Developer"],
+                loop: true,
+                typeSpeed:100,
+                backSpeed:80,
+                backDelay:1500,
+    
+            })
+        </script>
+
+        <div class="email">
+            <form action="./form.html">
+                <input type="email" name="email" id="mail" placeholder="If you are new enter your Email">
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+
+     <!----Home section---->
+
+    <section class="main" id="Home">
+        <div class="about">
+            <img src="../photo/IMG_4107.JPG" alt="Preenon Saha" class="Preenon">
+            <div class="about1">
+                <h2> About <span class="Me">Me</span> </h2>
+                <h4>Developer and Designer</h4>
+                <span class="dot"></span>
+                
+                <p>Hello everyone, I'm a Full-stack Web developer and a machine learning enthusiast. 
+                I can provide clean and understandable code. I can make websites which are easy to understand and can work efficiently.
+                I can make your website more and more interactive by using different animations and JavaScript.
+                My Websites are accessible to all users , regardless which device they use.
+                </p>
+                <button type="button" class="but">Lets get started</button>
+                
+                
+            </div>
+        </div>
+        </section>
+
+
+        <!----Qualification section---->
+
+        <section class="mh-skills" id="mh-skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-skills-inner">
+                            <div class="mh-professional-skill">
+                                <h1 class="Quality" id="Quali">Quali<span class="fic" id="fic">fication</span></h1>
+                                <h3><b>Technical Skills</b></h3>
+                                <div class="each-skills">
+                                    <div class="candidates">
+                                        <div class="practical">
+                                            <div class="info">
+                                                <div class="name">HTML</div>
+                                                <div class="percentage-num">90%</div>
+                                            </div>
+                                           <div class="progressBar">
+                                            <div class="percentagem" style="width: 86%;"></div>
+                                           </div> 
+
+                                        </div>
+                                    </div>
+
+                                    <div class="candidates">
+                                        <div class="practical">
+                                            <div class="info">
+                                                <div class="name">CSS</div>
+                                                <div class="percentage-num">84%</div>
+                                            </div>
+                                           <div class="progressBar">
+                                            <div class="percentagem" style="width: 84%;"></div>
+                                           </div> 
+
+                                        </div>
+                                    </div>
+
+                                    <div class="candidates">
+                                        <div class="practical">
+                                            <div class="info">
+                                                <div class="name">Python</div>
+                                                <div class="percentage-num">80%</div>
+                                            </div>
+                                           <div class="progressBar">
+                                            <div class="percentagem" style="width: 80%;"></div>
+                                           </div> 
+
+                                        </div>
+                                    </div>
+
+                                    <div class="candidates">
+                                        <div class="practical">
+                                            <div class="info">
+                                                <div class="name">C++</div>
+                                                <div class="percentage-num">70%</div>
+                                            </div>
+                                           <div class="progressBar">
+                                            <div class="percentagem" style="width: 70%;"></div>
+                                           </div> 
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-6">
+                        <div class="mh-professional-skills">
+                            <h3>Professional Skills</h3>
+                            <ul class="mh-professional-progress">
+                                <li>
+                                    <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                    <div class="pr-skill-name">Communication</div>
+                                </li>
+
+
+                                <li>
+
+                                    <div class="mh-progress mh-progress-circle" data-progress="85"></div>
+                                    <div class="pr-skill-name">Team work</div>
+                                </li>
+
+
+                                
+                                <li>
+
+                                    <div class="mh-progress mh-progress-circle" data-progress="70"></div>
+                                    <div class="pr-skill-name">Project Management</div>
+                                </li>
+
+
+                                
+                                <li>
+
+                                    <div class="mh-progress mh-progress-circle" data-progress="75"></div>
+                                    <div class="pr-skill-name">Creativity</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="circle-progress.js"></script>
+
+      <!----Services Section-->
+
+    <div class="service" id="service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web Development</h5>
+                <div class="pra">
+                    <p>Every Website has two primary features: Firstly, it needs
+                       to work across all devices. Secondly, it needs to be as fast as possible.</p>
+
+                    <p style="text-align: center;">
+                        <a class="but-ton" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-brands fa-youtube"></i>
+                <h5>Youtube Content</h5>
+                <div class="pra">
+                    <p>A good Youtube content needs to be to the point and consistent.
+                        Consistency is the key to success.
+                    </p>
+
+                    <p style="text-align: center;">
+                        <a class="but-ton" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-regular fa-calendar-days"></i>
+                <h5>Online Events</h5>
+            <div class="pra">
+                <p>Any online event needs punctuality and quality. Quality leads your event
+                    to its destination.  </p>
+
+                <p style="text-align: center;">
+                    <a class="but-ton" href="#">Read More</a>
+                </p>
+            </div>
+        </div>            
+
+        </div>
+    </div>
+
+
+    <!---Contact Me-->
+        <div class="contact-me" id="contact">
+           <p>Let me take you to my contact details</p> 
+           <a class="button-two" href="#">Hire me</a>
+        </div>
+    
+    <!--Footer-->
+    <footer>
+        <p>Preenon <span>Saha</span></p>
+        <p>For more customized interactive websites you can contac me 
+           on my contact details</p>
+
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+        </div>
+
+        <p class="end"> &copy; By Preenon Saha</p>
+    </footer>
+</body>
+</html>

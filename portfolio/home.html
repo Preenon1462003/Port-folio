@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        body{
+            background-color: #191919;
+            
+        }
+        .main{
+            width: 100%;
+            padding: 100px 0px;
+        }
+        .about{
+          
+            width: 1130px;
+            max-width: 93%;
+            margin:0 auto ;
+            align-items: center;
+            display: flex;
+            justify-content:space-around;
+
+        }
+        
+        .about1{
+            margin-left: 100px;
+            width: 550px;
+        }
+        .main img{
+            width: 430px;
+            height: auto;
+            
+        }
+       .about1 h2{
+        color: aliceblue;
+        font-size: 75px;
+        text-transform:capitalize;
+        margin-bottom: 25px;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: underline;
+        text-decoration-color:brown;
+       }
+       .about1 h4{
+        font-size: 45px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+       }
+       .about1 p{
+        color: whitesmoke;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+        font-family: 'Poppins', sans-serif;
+        
+        
+       }
+
+      .dot::before{
+        position:absolute;
+        content: '';
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        left:80%;
+        top:60%;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        z-index:-5;
+        animation: obejct1 6s linear infinite;
+      }
+
+      .dot::after{
+        position:absolute;
+        content: '';
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        left:50%;
+        top:25%;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        z-index:-5;
+        animation: obejct2 6s linear infinite;
+
+      }
+
+      @keyframes object1 {
+        50%{
+            left:70%;
+            top:41%;
+        }
+      }
+
+      @keyframes object2 {
+        50%{
+            left:35%;
+            top:15%;
+        }
+      }
+
+
+
+    </style>
+</head>
+<body>
+    <section class="main">
+    <div class="about">
+        <img src="../photo/IMG_4107.JPG" alt="Preenon Saha">
+        <div class="about1">
+            <h2> About Me</h2>
+            <h4>Developer and Designer</h4>
+            <span class="dot"></span>
+            
+            <p>Hello everyone, I'm a Full-stack Web developer and a machine learning enthusiast. 
+            I can provide clean and understandable code. I can make websites which are easy to understand and can work efficiently.
+            I can make your website more and more interactive by using different animations and JavaScript.
+            My Websites are accessible to all users , regardless which device they use.
+            </p>
+            <button type="button">Lets get started</button>
+            
+            
+        </div>
+    </div>
+    </section>
+</body>
+</html>
